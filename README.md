@@ -1,4 +1,5 @@
-# data-structure-java
+# learn-java-with-me
+
 Repository  contains data structure programs in java.
 1. Stack (using Array, LinkedList, Collection)
 2. Queue (using Array, LinkedList, Collection)
@@ -10,3 +11,8 @@ Repository  contains data structure programs in java.
 8. Binary Tree
 9. Binary Search Tree
 10. Graph (using Adjecency List)
+
+Repository contains collections framework programs in java.
+1. List
+2. Set
+3. Map
