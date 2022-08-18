@@ -19,11 +19,7 @@ public class CheckPallindrome {
         StringBuffer sb = new StringBuffer(s);
         String str = String.valueOf(sb.reverse());
 
-        if (s.trim().equals(str.trim())) {
-            result = true;
-        } else {
-            result = false;
-        }
+        result = (s.trim().equals(str.trim()) ? true : false);
 
         return result;
     }
@@ -31,6 +27,7 @@ public class CheckPallindrome {
     public static void main(String[] args) {
         Map<String, String> result = new LinkedHashMap<String, String>();
         result = checkPallindrome("Hello madam my name is nayan");
+        
         System.out.println("Word\t\t\tResults");
         result.forEach((k, v) -> {
             System.out.println(k + "\t\t->\t" + v);
