@@ -70,5 +70,23 @@ class StringMethods {
 
         System.out.println(Str1.equalsIgnoreCase(Str4));
 
+        // 9. void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) : This
+        // method copies characters from this string into the destination character
+        // array. It does not return any value but throws IndexOutOfBoundsException.
+
+        String str5 = "welcome to college of engineering";
+        char[] charArr = new char[str5.split("").length - 1];
+        System.out.println(charArr.length);
+
+        try {
+            str5.getChars(5, 20, charArr, 0);
+            System.out.println(charArr);
+
+            str5.getChars(0, 5, charArr, 12);
+            System.out.println(charArr);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }
