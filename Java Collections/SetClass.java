@@ -87,6 +87,7 @@ public class SetClass {
             System.out.println(data);
         }
 
+   
         data.add(10);
         data.add(20);
         data.add(10);
