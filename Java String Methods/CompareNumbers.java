@@ -5,6 +5,7 @@ class CompareNumbers{
     }
     
     public static void main(String[] args) {
-        
+        String str = (compareNumber(12, 12) == 0) ? "Equal" : "Not Equal"; 
+        System.out.println(str);
     }
 }
