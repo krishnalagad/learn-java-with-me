@@ -16,8 +16,11 @@ public class PallindromeCheck {
     //     else
     //         return false;
     // }
+    
     public static boolean isPalindrome(int x) {
         if (x < 0)
+            return false;
+        if (x > Integer.MAX_VALUE)
             return false;
 
         int raw = x;
@@ -27,6 +30,10 @@ public class PallindromeCheck {
         return flag;
     }
     public static void main(String[] args) {
-        System.out.println(isPalindrome(123));
+        try {
+            System.out.println(isPalindrome(12121));
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
     }
 }
