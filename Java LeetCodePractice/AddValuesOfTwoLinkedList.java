@@ -45,7 +45,6 @@ class Solution {
             finalSum = valOfL1 + valOfL2 + carry;
             carry = finalSum / 10; // to get the carry divide sum by 10.
             rawNode.next = new ListNode(finalSum % 10);
-            // head.next = rawNode;
             rawNode = rawNode.next;
 
             if (l1 != null)
