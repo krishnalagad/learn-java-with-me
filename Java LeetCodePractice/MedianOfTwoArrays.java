@@ -25,8 +25,6 @@ public class MedianOfTwoArrays {
 
         // if list size is even
         if (list3.size() % 2 == 0) {
-            System.out.println((Double.valueOf(list3.get(list3.size() / 2))) + "\t\t" + (Double
-                    .valueOf(list3.get((list3.size() / 2) - 1))));
             return ((Double.valueOf(list3.get(list3.size() / 2)))
                     + (Double.valueOf(list3.get((list3.size() / 2) - 1)))) / Double.valueOf(2);
         }
