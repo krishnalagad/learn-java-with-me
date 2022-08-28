@@ -1,4 +1,4 @@
-public class RemoveNodeFromBAck {
+public class RemoveNodeFromBack {
     public class ListNode {
         int val;
         ListNode next;
