@@ -11,6 +11,7 @@ public class LongestSubstring {
 
             while (set.contains(c)) {
                 set.remove(s.charAt(i));
+                i += 1;
             }
 
             set.add(c);
