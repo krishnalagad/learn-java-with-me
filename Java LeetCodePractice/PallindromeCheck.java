@@ -30,10 +30,6 @@ public class PallindromeCheck {
         return flag;
     }
     public static void main(String[] args) {
-        try {
-            System.out.println(isPalindrome(12121));
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
+            System.out.println("Is number pollindrome: " + isPalindrome(12121));
     }
 }
