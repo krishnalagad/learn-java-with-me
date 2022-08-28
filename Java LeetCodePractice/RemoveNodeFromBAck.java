@@ -32,6 +32,12 @@ public class RemoveNodeFromBAck {
             size += 1;
             temp = temp.next;
         }
+
+        if (size == n) {
+            head = head.next;
+            return head;
+        }
+
         int prevIndex = size - n;
         int delIndex = size - n + 1;
         temp = head;
