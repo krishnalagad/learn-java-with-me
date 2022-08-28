@@ -15,7 +15,7 @@ public class LongestSubstring {
             }
 
             set.add(c);
-            max = Math.max(max, j - i - 1);
+            max = Math.max(max, j - i + 1);
         }
         return max;
     }
