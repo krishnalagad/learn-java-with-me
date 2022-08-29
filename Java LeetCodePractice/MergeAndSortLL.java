@@ -25,7 +25,6 @@ public class MergeAndSortLL {
             raw.next = new ListNode(list.get(i));
             raw = raw.next;
         }
-
         return head.next;
     }
 
