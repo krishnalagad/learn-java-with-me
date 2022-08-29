@@ -1,14 +1,15 @@
 import java.util.*;
 import java.util.stream.*;
 
-public class ConvertListToMap{
+public class ConvertListToMap {
     static List<Student> students = new ArrayList<Student>();
-    static class Student{
+
+    static class Student {
         private int id;
         private String name;
 
         public Student() {
-        } 
+        }
 
         public Student(int id, String name) {
             this.id = id;
@@ -34,12 +35,12 @@ public class ConvertListToMap{
         @Override
         public String toString() {
             return "Student [id=" + id + ", name=" + name + "]";
-        }    
-        
+        }
+
     }
-    
-    public static void addData(int id, String name){
-        // 1. 
+
+    public static void addData(int id, String name) {
+        // 1.
         // Student student = new Student();
         // student.setId(id);
         // student.setName(name);
@@ -48,7 +49,7 @@ public class ConvertListToMap{
         Student student = new Student(id, name);
         students.add(student);
     }
-    
+
     public static void main(String[] args) {
         // int[] arr = { 1, 2, 5, 9, 7, 3, 4, 6 };
         // List<Integer> list = Arrays.stream(arr).boxed().collect(Collectors.toList());
@@ -60,5 +61,8 @@ public class ConvertListToMap{
         addData(103, "Aishwarya");
 
         System.out.println(students);
+
+        Map<Integer, String> resp = students.stream().collect(Collectors.toMap(Student::getId, Student::getName));
+        System.out.println(resp);
     }
 }
