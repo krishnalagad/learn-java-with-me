@@ -7,7 +7,7 @@ public class CompareArrays {
      * @param args
      */
     public static void main(String[] args) {
-        int[] array1 = { 1, 2, 5 };
+        int[] array1 = { 1, 2, 5 }; 
         int[] array2 = { 2, 1, 5 };
 
         Set<Integer> set = Arrays.stream(array1).boxed().collect(Collectors.toSet());
