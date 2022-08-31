@@ -65,4 +65,4 @@ public class ConvertListToMap {
         Map<Integer, String> resp = students.stream().collect(Collectors.toMap(Student::getId, Student::getName));
         System.out.println(resp);
     }
-}
+} 
