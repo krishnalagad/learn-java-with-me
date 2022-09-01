@@ -18,6 +18,11 @@ public class SearchInsertPosition {
             }
         }
 
+        // 3. if element doesn't exists in the input array and less than greatest
+        // element in array
+        if (target > list.get(list.size() - 1)) {
+            return list.size();
+        }
 
         return 0;
     }
