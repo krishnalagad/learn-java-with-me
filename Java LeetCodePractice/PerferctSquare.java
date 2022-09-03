@@ -10,7 +10,6 @@ public class PerferctSquare {
         list1.set(0, a);
         a += 1;
         System.out.println(root);
-        int countPos = 0;
         int countNeg = 0;
 
         if (n % root == 0 && !list1.isEmpty())
@@ -23,8 +22,6 @@ public class PerferctSquare {
         if (str.indexOf(".") != -1) {
             for (int i = 0; i < Integer.MAX_VALUE - 1;) {
                 countNeg++;
-                list1.add(i + 1);
-                list1.set(0, i + 1);
                 n -= 1;
                 solve(n);
 
