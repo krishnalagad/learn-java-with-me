@@ -9,7 +9,7 @@ public class PerferctSquare {
         list1.add(a);
         list1.set(0, a);
         a += 1;
-        System.out.println(root);
+        // System.out.println(root);
         int countNeg = 0;
 
         if (n % root == 0 && !list1.isEmpty())
@@ -23,16 +23,25 @@ public class PerferctSquare {
             for (int i = 0; i < Integer.MAX_VALUE - 1;) {
                 countNeg++;
                 n -= 1;
-                solve(n);
+                int m = solve(n);
 
-                return list1.get(0) - 1;
+                return m;
+                // double p = Math.sqrt(n - m);
+                // System.out.println(p);
+                // double q = Math.pow((p + 1), 2);
+                // System.out.println(p + " " + (q-Math.pow(p, 2) ) + m);
+                // return checkMin(m, (q - Math.pow(p, 2) + m));
             }
         }
         return list1.get(0);
     }
 
+    public static int checkMin(int a, double b) {
+        return (int) Math.min(a, b);
+    }
+
     public static void main(String[] args) {
-        int no = 54;
+        int no = 28;
         System.out.println("Input: " + no);
         System.out.println("Output: " + solve(no));
     }
