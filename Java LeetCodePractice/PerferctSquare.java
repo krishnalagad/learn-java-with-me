@@ -14,7 +14,7 @@ public class PerferctSquare {
         int countNeg = 0;
 
         if (n % root == 0 && !list1.isEmpty())
-            return list1.get(0);
+            return list1.get(0) - 1;
 
         if (n % root == 0)
             return countNeg;
@@ -35,6 +35,8 @@ public class PerferctSquare {
     }
 
     public static void main(String[] args) {
-        System.out.println(solve(45));
+        int no = 54;
+        System.out.println("Input: " + no);
+        System.out.println("Output: " + solve(no));
     }
 }
