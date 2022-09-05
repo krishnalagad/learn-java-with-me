@@ -1,6 +1,5 @@
-import java.util.*;
-import java.util.function.Function;
-import java.util.stream.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class FindDuplicate {
     // 1. Approach 1
