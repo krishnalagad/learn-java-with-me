@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class MoneyWithdrawAndCreditUsingSet {
-    Set<Acc> set = new HashSet<Acc>();
+    static Set<Acc> set = new HashSet<Acc>();
 
     class Acc {
         int no;
@@ -65,8 +65,7 @@ public class MoneyWithdrawAndCreditUsingSet {
         c.doTransaction("234 has a amount of 2000");
         c.doTransaction("456 has a amount of -2000");
         c.doTransaction("567 has a amount of -2000");
-
-        Set<Acc> set = c.doTransaction("123 has amount of -1000");
+        c.doTransaction("123 has amount of -1000");
 
         System.out.println();
 
