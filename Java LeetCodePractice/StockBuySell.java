@@ -1,6 +1,3 @@
-import java.util.*;
-import java.util.stream.*;
-
 public class StockBuySell {
 
     public static int maxProfit(int[] prices) {
