@@ -1,23 +1,35 @@
-import java.util.Arrays;
+import java.util.*;
 import java.util.Map;
 import java.util.function.Function;
-import java.util.stream.Collectors;
+import java.util.stream.*;
 
 public class FindDuplicate {
+    // 1. Approach 1
+    // public static int findDuplicate(int[] nums) {
+    //     return Arrays
+    //             .stream(nums)
+    //             .boxed()
+    //             .collect(
+    //                     Collectors.groupingBy(
+    //                             Function.identity(),
+    //                             Collectors.counting()))
+    //             .entrySet()
+    //             .stream()
+    //             .filter(m -> m.getValue() > 1)
+    //             .map(Map.Entry::getKey)
+    //             .collect(Collectors.toList())
+    //             .get(0);
+    // }
+
+    // 2. Approach 2
     public static int findDuplicate(int[] nums) {
+        Set<Integer> items = new HashSet<>();
         return Arrays
-                .stream(nums)
-                .boxed()
-                .collect(
-                        Collectors.groupingBy(
-                                Function.identity(),
-                                Collectors.counting()))
-                .entrySet()
-                .stream()
-                .filter(m -> m.getValue() > 1)
-                .map(Map.Entry::getKey)
-                .collect(Collectors.toList())
-                .get(0);
+                    .stream(nums)
+                    .boxed()
+                    .filter(n -> !items.add(n))
+                    .collect(Collectors.toList())
+                    .get(0);
     }
 
     public static void main(String[] args) {
