@@ -9,11 +9,13 @@ public class TreeMapClass {
         System.out.println(keysList);
 
         if (keysList.contains(key)) {
+            if(key == keysList.get(keysList.size() - 1)) 
+                return -1;
             int idx = keysList.indexOf(key);
             return keysList.get(idx + 1);
         }
 
-        return 0;
+        return -1;
     }
 
     public static void main(String[] args) {
