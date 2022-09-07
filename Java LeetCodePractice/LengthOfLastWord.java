@@ -6,6 +6,7 @@ public class LengthOfLastWord {
         List<String> list = new ArrayList<String>();
         for(String str: strArr)
             list.add(str.trim());  
+
         return list.get(list.size() - 1).split("").length;
     }
     public static void main(String[] args) {
