@@ -63,14 +63,17 @@ public class QueueCircularClassArray {
     public static void main(String[] args) {
 
         new CircularQueue(5);
+
         CircularQueue.add(1);
         CircularQueue.add(2);
         CircularQueue.add(3);
         CircularQueue.add(4);
         CircularQueue.add(5);
         System.out.println(CircularQueue.remove());
+
         CircularQueue.add(6);
         System.out.println(CircularQueue.remove());
+        
         CircularQueue.add(7);
         CircularQueue.add(8);
         System.out.println();
