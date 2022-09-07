@@ -6,7 +6,6 @@ public class TreeMapClass {
         Set<Integer> keys = map.keySet();
         List<Integer> keysList = keys.stream().collect(Collectors.toList());
         Collections.sort(keysList, Collections.reverseOrder());
-        System.out.println(keysList);
 
         if (keysList.contains(key)) {
             if(key == keysList.get(keysList.size() - 1)) 
