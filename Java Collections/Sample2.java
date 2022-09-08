@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class Sample2 {
+
     public static int func(char[] productId){
 
         int answer = 0;
@@ -35,16 +36,15 @@ public class Sample2 {
     
 
     public static int func1(char[] productId) {
-
         int answer = 0;
-        List<Character> list = new ArrayList<>();
-
-        
+        String str = String.valueOf(productId);
+        String replaceAll = str.replaceAll("[aeiouAEIOU]", "");
+        answer = replaceAll.length();        
         return answer;
     }
 
     public static void main(String[] args) {
-        char[] arr = {'a', 'e', 'k', 'v', 'A'};
-        System.out.println(func(arr));
+        char[] arr = {'a', 'e', 'k', 'v', 'A', 'i', 'c', 'x', 'X', 'I'};
+        System.out.println(func1(arr));
     }
 }
