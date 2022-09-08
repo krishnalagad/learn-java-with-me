@@ -21,19 +21,7 @@ public class Sample2 {
         answer = list.size();
         return answer;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-    
+ 
 
     public static int func1(char[] productId) {
         int answer = 0;
