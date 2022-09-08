@@ -6,6 +6,7 @@ public class Sample {
     public static int solve(int n){
         return n * n;
     }
+    
     public static void main(String[] args) {
         System.out.println(solve(4));
     }
