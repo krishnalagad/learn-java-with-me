@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Sample {
+public class LandT2 {
 
     public static int maxEnergy(int[] ener) {
         List<Integer> list = Arrays.stream(ener).boxed().collect(Collectors.toList());
