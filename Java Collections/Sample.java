@@ -25,13 +25,12 @@ public class Sample {
         }
         Collections.sort(result1);
 
-        for (int i = num + 1; i < list.size(); i++) {
+        for (int i = num; i < list.size(); i++) {
             result2.add(list.get(i));
         }
         Collections.sort(result2, Collections.reverseOrder());
 
         result1.addAll(result2);
-        System.out.println(result1);
 
         answer = result1.stream()
                 .mapToInt(Integer::intValue)
@@ -41,10 +40,14 @@ public class Sample {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 9, -3, 8, -6, -7, 8, 10 };
+        int[] arr = { 9, -3, 8, -6, -7, 10, 2, 3, 5, -8 };
         // System.out.println(maxEnergy(arr));
 
-        System.out.println(func(arr, 3));
+        arr = func(arr, 5);
+
+        for(int i: arr){
+            System.out.print(i + " ");
+        }
     }
 
 }
