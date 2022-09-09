@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.Map.Entry;
 
-public class CountUniqueCharacters {
+public class SumOfAllPossibleSubStrings {
     // public static List<String> getAllSubstrings(List<Character> list, int n) {
     // List<String> result = new ArrayList<String>();
     // for (int len = 1; len <= n; len++) {
