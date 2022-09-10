@@ -2,23 +2,19 @@ import java.util.*;
 import java.util.stream.*;
 
 public class Convert2DArrayToList {
-    /**
-     * @param arr
-     */
-    // public static void convertToList(int[][] arr) {
-    //     final List<Integer> list = Arrays.stream(arr) // 'array' is two-dimensional
-    //             .flatMap(Arrays::stream)
-    //             .collect(Collectors.toList());
+    public static int[] removeDuplicate(int[] arr){
 
-    // }
-
+        List<Integer> list = Arrays.stream(arr).boxed().collect(Collectors.toList());
+        Set<Integer> set = new LinkedHashSet<Integer>();
+        set.addAll(list);
+        return set.stream().mapToInt(Integer::intValue).toArray();
+    }
     public static void main(String[] args) {
-        int[][] arr = {
-                { 1, 2, 3 },
-                { 4, 5, 6 },
-                { 7, 8, 9 }
-        };
+       int[] arr = {1, 2, 3, 4, 1, 2};
 
-        // convertToList(arr);
+       arr = removeDuplicate(arr);
+       for(int i: arr){
+        System.out.print(i + " ");
+       }
     }
 }
