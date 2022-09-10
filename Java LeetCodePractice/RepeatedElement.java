@@ -1,8 +1,5 @@
 public class RepeatedElement {
     public static int findSpecialInteger(int[] arr) {
-
-
-
         
         return 0;
     }
