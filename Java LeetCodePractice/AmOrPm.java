@@ -1,5 +1,4 @@
 public class AmOrPm {
-
     public static String solve(String time){
         String[] strArr = time.split(":");
         int hours = Integer.valueOf(strArr[0]);
