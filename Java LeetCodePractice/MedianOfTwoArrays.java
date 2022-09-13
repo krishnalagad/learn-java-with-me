@@ -7,7 +7,6 @@ import java.util.stream.Stream;
 
 public class MedianOfTwoArrays {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-
         List<Integer> list1 = Arrays.stream(nums1).boxed().collect(Collectors.toList());
         List<Integer> list2 = Arrays.stream(nums2).boxed().collect(Collectors.toList());
         List<Integer> list3 = new ArrayList<>();
