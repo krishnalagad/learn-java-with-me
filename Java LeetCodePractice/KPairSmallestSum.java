@@ -3,16 +3,17 @@ import java.util.*;
 public class KPairSmallestSum {
     public static List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         List<List<Integer>> ans = new ArrayList<>();
-        for (int i = 0; i < nums1.length; i++) {
-            List<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < nums1.length; i++) {   
             for (int j = 0; j < nums2.length; j++) {
-                list.add(nums1[i], nums2[j]);
-                System.out.println(list);
+                List<Integer> list = new ArrayList<Integer>();
+                list.add(nums1[i]);
+                list.add(nums2[j]);
+                ans.add(list);
+                System.out.println(ans);
             }
-            ans.add(list);
+            
         }
-
-        return ans;
+        return ans.subList(0, k);
     }
 
     public static void main(String[] args) {
