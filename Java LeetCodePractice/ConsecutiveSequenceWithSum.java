@@ -22,6 +22,6 @@ public class ConsecutiveSequenceWithSum {
     }
 
     public static void main(String[] args) {
-        findConsecutive(100000);
+        findConsecutive(10000000);
     }
 }
