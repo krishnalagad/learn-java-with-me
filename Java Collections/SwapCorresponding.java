@@ -1,17 +1,10 @@
-import java.util.*;
-import java.util.stream.*;
-
 public class SwapCorresponding {
     static int[] changePos(int[] arr) {
-        // List<Integer> list = Arrays.stream(arr).boxed().collect(Collectors.toList());
-        int[] ans = new int[arr.length];
         for (int i = 0; i < arr.length - 1; i+=2) {
             int temp = arr[i];
             arr[i] = arr[i + 1];
             arr[i + 1] = temp;
-
         }
-
         return arr;
     }
 
