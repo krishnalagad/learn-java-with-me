@@ -3,6 +3,6 @@ public class NumberToBinary{
         return Integer.toBinaryString(number);
     }
     public static void main(String[] args) {
-        System.out.println(convertToBinary(45));
+        System.out.println(convertToBinary(25));
     }
 }
