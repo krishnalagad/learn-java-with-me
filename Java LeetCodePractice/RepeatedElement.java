@@ -1,5 +1,5 @@
-import java.util.*;
-import java.util.function.Consumer;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Predicate;
 
 public class RepeatedElement {
@@ -27,23 +27,25 @@ public class RepeatedElement {
         ;
     }
 
-    public static void func(int a, List<Integer> b){
+    public static void func(int a, List<Integer> b) {
         a += 1;
         b.add(1);
     }
 
-    public static boolean foo(String str1, String str2){
-        if(str1.length() != str2.length()) return false;
+    public static boolean foo(String str1, String str2) {
+        if (str1.length() != str2.length())
+            return false;
 
         for (int i = 0; i < str1.length(); i++) {
-            if(str1.charAt(str1.length() -i - 1 ) == str2.charAt(i) ){
+            if (str1.charAt(str1.length() - i - 1) == str2.charAt(i)) {
                 continue;
-            }else{
+            } else {
                 return str1.charAt(str1.length() - i - 1) < str2.charAt(i);
             }
         }
         return true;
     }
+
     public static void main(String[] args) {
         System.out.println(rec("krishna"));
 
