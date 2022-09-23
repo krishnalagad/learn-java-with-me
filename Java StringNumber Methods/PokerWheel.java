@@ -12,18 +12,17 @@ public class PokerWheel {
             Collections.sort(list2, Collections.reverseOrder());
             list1.add(list2);
         }
-        for (List<Integer> temp : list1) 
+        for (List<Integer> temp : list1)
             answer.add(temp.get(0));
-            
+
         return answer.stream().mapToInt(Integer::intValue).toArray();
     }
 
     public static void main(String[] args) {
-        String[] strArr = { "123", "234", "432" };
+        String[] strArr = { "123", "234", "432", "235", "908", "789" };
         int[] arr = new int[strArr.length];
         arr = solve(strArr);
-        for (int i : arr) {
+        for (int i : arr)
             System.out.print(i + " ");
-        }
     }
 }
