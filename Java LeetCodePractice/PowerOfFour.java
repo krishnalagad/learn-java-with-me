@@ -1,6 +1,6 @@
 public class PowerOfFour {
     public static boolean isPowerOfFour(int n) {
-        for (int i = 0; i < Integer.MAX_VALUE; i++)
+        for (int i = 0; i < 100; i++)
             if (n == (Math.pow(4, i)))
                 return true;
 
