@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.stream.*;
 public class CntAndFreVowels {
     static Map<String, Integer> resp = new HashMap<String, Integer>(); // stores frequency of vowels
-    
+
     public static void checkFrequency(List<String> list) {
         for (int i = 0; i < list.size(); i++) {
             int count = 0;
@@ -22,7 +22,7 @@ public class CntAndFreVowels {
     }
 
     public static void main(String[] args) {
-        solve("aakankshaaishwarya");
+        solve("Aakankshaaishwarya");
         System.out.println("Vowel\t\tFrequency");
         resp.forEach((k, v) -> {
             System.out.println(k + "\t->\t" + v);
