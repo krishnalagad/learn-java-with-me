@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class CntAndFreVowels {
     static Map<Character, Integer> resp = new HashMap<Character, Integer>(); // stores frequency of vowels
 
@@ -21,6 +20,8 @@ public class CntAndFreVowels {
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I'
                     || ch == 'O' || ch == 'U')
                 list1.add(ch);
+            else if(ch == ' ')
+                continue;
             else
                 list2.add(ch);
         }
