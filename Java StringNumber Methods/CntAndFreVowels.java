@@ -22,7 +22,7 @@ public class CntAndFreVowels {
     }
 
     public static void main(String[] args) {
-        solve("Aakankshaaishwarya");
+        solve("aakankshaaishwarya");
         System.out.println("Vowel\t\tFrequency");
         resp.forEach((k, v) -> {
             System.out.println(k + "\t->\t" + v);
