@@ -22,7 +22,7 @@ public class MaximunStrength {
 
     public static void main(String[] args) {
         int n = 4;
-        int[] arr = { 1, 5, 3, 4 };
+        int[] arr = { 1, 5, 3, 4, 9, 6, 8 };
         System.out.println(strongestTeam(n, arr));
     }
 }
