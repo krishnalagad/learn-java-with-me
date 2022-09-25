@@ -3,7 +3,7 @@ import java.util.*;
 public class ValidPallindromeII {
     public static boolean isValid(String str) {
         StringBuffer buffer = new StringBuffer(str.trim());
-        if (str.trim().equals(String.valueOf(buffer.reverse()))) 
+        if (str.trim().equals(String.valueOf(buffer.reverse())))
             return true;
         return false;
     }
@@ -13,14 +13,17 @@ public class ValidPallindromeII {
         List<Boolean> result = new ArrayList<Boolean>();
         for (int i = 0; i < s.length(); i++) {
             strArr[i] = "";
+            // System.out.println(String.join("", strArr));
             result.add(isValid(String.join("", strArr)));
             strArr = s.split("");
         }
-        if (result.contains(true)) 
+        if (result.contains(true))
             return true;
         return false;
     }
+
     public static void main(String[] args) {
-        System.out.println(validPalindrome("aba"));
+        System.out.println(validPalindrome(
+                "tkhyzcuolcevmcxqngiemrezsmlrqrwutwbecinfrolmqmnlzglihredxpgidwipbrkqygkcaiuwnshgqetrvgdqhkxgzugjmjlqxdaonegeugqrvowldihcvjtalbmrnypgwimkcmnwmtkuolpcgeievxewnpgwnuppfzzildfazkjebowdjjtxuqcndzrwbwymnveyedftuibheazgbqdfwtozfjwvnhblrlclfqndaiebuymyezahxsdmrxifkwtcxgqmdxfcfuojobekknkoambznbghijslaeyqpbkhdoovgxwihlojkebimntvjpnluacxlnzwhfcqtnuvzvjpkazwotvbvbtwnzrssnqtyniaokpkqqpwpzfnojayozjoomwnknhkphnyvkadsdrkngxjwietzmuvkoozzyoydbiwyqgxlutfugsaxikufubkyucnbkpbjffzivqpuzfwilhmncpcrytunpryzxohfnccbllyhskpszygjgfrfczhjgszasewngubrsxojiqphbqciaooenbstkdblffishfpyxwwluihkxoilmfkrpgpybtyhkvyyjtonakvmvwveectvkrljklvkqthmevkkdjtzfryqghkpjsuzlobdscrormuclxpqgdcrzkjihyroatfmqzqtqebzulhrdiibjuxzbkjkkgfymqqyxpcoezucdbrfkadkyxovjzhqbfcnmhcmgjokigpsgzwrosrfbztxznqdgreldcrmciipvnafnkrpxzdjolkmuynskmemdhlsliklffrifxrsvchuozttsuantjixiilvzsgzqtegpwriqybvmmlktgkdriwpyjdxjngvejfrnmhhglcltdlorbuaaqhilylywjujgwwlagfxmboixetgsgtwdtxcehcpywjmzqfsnqhpbgclossccnnrkdetpjovkpkwjuwxknouyytdliosfyjqhmyndloscdsydhvddfoofddvhdysdcsoldnymhqjyfsoildtyyuonkxwujwkpkvojptedkrnnccssolcgbphqnsfqzmjwypchecxtdwtgsgtexiobmxfgalwwgjujwylylihqaaubroldtlclghhmnrfjevgnjxdjypwirdkgtklmmvbyqirwpgetqzgszvliixijtnausttzouhcvsrxfirfflkilslhdmemksnyumklojdzxprknfanvpiicmrcdlergdqnzxtzbfrsorwzgspgikojgmchmncfbqhzjvoxykdakfrbdcuzeocpxyqqmyfgkkjkbzxujbiidrhluzbeqtqzqmftaoryhijkzrcdgqpxlcumrorcsdbolzusjpkhgqyrfztjdkkvemhtqkvlkjlrkvtceevwvmvkanotjyyvkhytbypgprkfmlioxkhiulwwxypfhsifflbdktsbneooaicqbhpqijoxsrbugnwesazsgjhzcfrfgjgyzspkshyllbccnfhoxzyrpnutyrcpcnmhliwfzupqvizffjbpkbncuykbufukixasguftulxgqywibdyoyzzookvumzteiwjxgnkrdsdakvynhpkhnknwmoojzoyajonfzpwpqqkpkoainytqnssrznwtbvbvtowzakpjvzvuntqcfhwznlxcaulnpjvtnmibekjolhiwxgvoodhkbpqyealsjihgbnzbmaoknkkebojoufcfxdmqgxctwkfixrmdsxhazeymyubeiadnqflclrlbhnvwjfzotwfdqbgzaehbiutfdeyevnmywbwrzdncquxtjjdwobejkzafdlizzfppunwgpnwexveiegcplouktmwnmckmiwgpynrmblatjvchidlwovrqguegenoadxqljmjguzgxkhqdgvrteqghsnwuiackgyqkrbpiwdigpxderhilgzlnmqmlorfnicebwtuwrqrlmszermeignqxcmveclouczyhkt"));
     }
 }
