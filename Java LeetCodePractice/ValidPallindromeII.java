@@ -21,6 +21,6 @@ public class ValidPallindromeII {
         return false;
     }
     public static void main(String[] args) {
-        System.out.println(validPalindrome("abc"));
+        System.out.println(validPalindrome("madam"));
     }
 }
