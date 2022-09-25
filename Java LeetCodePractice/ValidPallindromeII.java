@@ -13,7 +13,6 @@ public class ValidPallindromeII {
         List<Boolean> result = new ArrayList<Boolean>();
         for (int i = 0; i < s.length(); i++) {
             strArr[i] = "";
-            // System.out.println(String.join("", strArr));
             result.add(isValid(String.join("", strArr)));
             strArr = s.split("");
         }
