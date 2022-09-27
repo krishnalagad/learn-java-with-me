@@ -12,7 +12,6 @@ public class AvgSalaryExcludeMinMax {
             else
                 res.add(list.get(i));
         }
-
         return res.stream().mapToInt(Integer::intValue).sum() / 2;
     }
 
