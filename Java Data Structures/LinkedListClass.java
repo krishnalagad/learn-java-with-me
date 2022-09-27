@@ -1,5 +1,4 @@
 public class LinkedListClass {
-
     static Node head = null;
     static int size;
 
