@@ -1,28 +1,26 @@
 import java.util.*;
-import java.util.stream.*;
 
 public class OddSumSubArrays {
     static List<List<Integer>> printSubArray(int arr[]) {
         int n = arr.length;
         List<List<Integer>> result = new ArrayList<>();
-        for (int i = 0; i < n; i++) { // This loop will select start element
-            for (int j = i; j < n; j++) { // This loop will select end element
+        for (int i = 0; i < n; i++)
+            for (int j = i; j < n; j++) {
                 List<Integer> list = new ArrayList<>();
-                for (int k = i; k <= j; k++) // This loop will print element from start to end
+                for (int k = i; k <= j; k++)
                     list.add(arr[k]);
-
                 result.add(list);
-                System.out.println();
             }
-        }
         return result;
     }
 
     public static int numOfSubarrays(int[] arr) {
         List<List<Integer>> result = printSubArray(arr);
-
-        System.out.println(result);
-        return 0;
+        int answer = 0;
+        for (List<Integer> list : result)
+            if (((list.stream().mapToInt(Integer::intValue).sum()) % 2) != 0)
+                answer += 1;
+        return answer;
     }
 
     public static void main(String[] args) {
