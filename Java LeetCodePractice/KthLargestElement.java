@@ -3,10 +3,8 @@ import java.util.stream.*;
 
 public class KthLargestElement {
     public static int findKthLargest(int[] nums, int k) {
-        List<Integer> list = new ArrayList<Integer>();
-        list.addAll(Arrays.stream(nums).boxed().collect(Collectors.toList()));
+        List<Integer> list = Arrays.stream(nums).boxed().collect(Collectors.toList());
         Collections.sort(list, Collections.reverseOrder());
-        System.out.println(list);
         return list.get(k - 1);
     }
 
