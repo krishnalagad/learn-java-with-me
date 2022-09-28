@@ -15,7 +15,7 @@ public class KthLargestElementString {
     //         res = -heappop(heap)
     //     return str(res)
 
-    public static void main(String[] args) {
+    static public void main(String[] args) {
         String[] arr = { "623986800","3","887298","695","794","6888794705","269409","59930972","723091307","726368","8028385786","378585"};
         System.out.println(kthLargestNumber(arr, 3));
     }
