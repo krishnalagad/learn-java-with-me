@@ -23,6 +23,17 @@ public class OddSumSubArrays {
         return answer;
     }
 
+    /*
+     * def numOfSubarrays(self, arr):
+     * mod=10**9+7
+     * s,a,res=0,[1,0],0
+     * for x in arr:
+     * s+=x
+     * res=(res+a[(s%2)^1])%mod
+     * a[s%2]+=1
+     * return res
+     */
+
     public static void main(String[] args) {
         int[] arr = { 93, 42, 14, 40, 87, 11, 99, 80, 49, 49, 3, 25, 9, 37, 34, 44, 45, 74, 13, 17, 82, 81, 79, 62, 26,
                 40, 85, 96, 82, 46, 86, 17, 77, 10, 35, 84, 16, 10, 43, 63, 70, 92, 52, 36, 57, 63, 39, 53, 65, 18, 31,
