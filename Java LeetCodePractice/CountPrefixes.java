@@ -1,11 +1,10 @@
 public class CountPrefixes {
     public static int countPrefixes(String[] words, String s) {
         int count = 0;
-        for (String str : words) {
-            if (str.charAt(0) == s.charAt(0)) {
-                count += 1;
-            }
-        }
+        for (int i = 0; i < words.length; i++) 
+            if ((s.indexOf(words[i])) == 0) 
+                count++; 
+        
         return count;
     }
 
