@@ -30,6 +30,7 @@ public class CntAndFreVowels {
     }
 }
 
+
 // public static void solve(String name) {
 // char[] charArr = name.toCharArray();
 // List<Character> list1 = new ArrayList<>(); // stores vowels
