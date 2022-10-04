@@ -3,19 +3,17 @@ public class StudentAttendenceRecordI {
         int absent = 0, late = 0;
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (ch == 'L') {
+            if (ch == 'L')
                 late += 1;
-            } else {
+            else {
                 late = 0;
-                if (ch == 'A') {
+                if (ch == 'A')
                     absent += 1;
-                }
-            }
-            if (absent >= 3 || late >= 3) {
-                return false;
-            }
-        }
 
+            }
+            if (absent >= 3 || late >= 3)
+                return false;
+        }
         return true;
     }
 
