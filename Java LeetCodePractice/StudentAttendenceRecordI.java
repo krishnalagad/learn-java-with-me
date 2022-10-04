@@ -9,14 +9,12 @@ public class StudentAttendenceRecordI {
                 late = 0;
                 if (ch == 'A')
                     absent += 1;
-
             }
             if (absent >= 2 || late == 3)
                 return false;
         }
         return true;
     }
-
     public static void main(String[] args) {
         System.out.println(checkRecord("APPALLP"));
     }
