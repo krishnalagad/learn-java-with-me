@@ -15,7 +15,7 @@ public class BinarySearchMethod {
         Collections.shuffle(list);
         System.out.println(list);
         Collections.sort(list);
-        int index = Arrays.binarySearch(arr, 2112);
+        int index = Collections.binarySearch(list, 2112);
         System.out.println(index);
     }
 }
