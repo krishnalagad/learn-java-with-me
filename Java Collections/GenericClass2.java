@@ -23,6 +23,7 @@ public class GenericClass2 {
         Type2<Float> type2 = new Type2<>(12.8f);
         System.out.println(type2.getVar());
 
-        
+        Type2<Double> type2Obj = new Type2<>(12.5980);
+        System.out.println(type2Obj.getVar());
     }
 }
