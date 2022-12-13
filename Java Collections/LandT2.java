@@ -41,7 +41,6 @@ public class LandT2 {
 
     public static void main(String[] args) {
         int[] arr = { 9, -3, 8, -6, -7, 10, 2, 3, 5, -8 };
-        // System.out.println(maxEnergy(arr));
 
         arr = func(arr, 5);
 
