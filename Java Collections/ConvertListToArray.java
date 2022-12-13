@@ -10,9 +10,10 @@ public class ConvertListToArray {
         list.add(80);
         list.add(90);
         list.add(10);
+        list.add(70);
 
         for (Integer i : list) {
-            System.out.print("ELements in list : " + i);
+            System.out.println("ELements in list : " + i);
         }
 
         int arr[] = new int[list.size()];
