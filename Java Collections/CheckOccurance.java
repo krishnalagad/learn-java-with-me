@@ -20,7 +20,7 @@ public class CheckOccurance {
     public static void main(String[] args) {
         Map<Integer, Integer> result = new LinkedHashMap<Integer, Integer>();
 
-        int[] arr = { 12, 23, 12, 23, 12, 23, 12, 23, 12, 23 };
+        int[] arr = { 12, 23, 12, 23, 12, 23, 12, 23, 12, 23, 32, 32 };
         result = checkOccurance(arr);
         System.out.println("Number\t\tOccurance");
         result.forEach((k, v) -> {
