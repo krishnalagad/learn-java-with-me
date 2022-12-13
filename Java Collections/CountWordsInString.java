@@ -7,12 +7,12 @@ public class CountWordsInString {
     public static Map<String, Integer> findWordsCount(List<String> strList) {
 
         Map<String, Integer> resp = new LinkedHashMap<>();
-        for (String str : strList) {
+        for (String str : strList)
             resp.put(str, str.trim().split(" ").length);
-        }
 
         return resp;
     }
+
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
         Map<String, Integer> resp = new LinkedHashMap<>();
