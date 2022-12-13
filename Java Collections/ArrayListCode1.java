@@ -11,7 +11,7 @@ public class ArrayListCode1 {
      */
     public static void main(String[] args) {
         /*
-         * Creating colection - two ways
+         * Creating collection - two ways
          * 
          * 1) Type safe - same type of elements (objects) are added in the collection
          * 
