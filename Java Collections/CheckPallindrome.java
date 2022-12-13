@@ -27,7 +27,6 @@ public class CheckPallindrome {
     public static void main(String[] args) {
         Map<String, String> result = new LinkedHashMap<String, String>();
         result = checkPallindrome("Hello madam my name is nayan");
-        
         System.out.println("Word\t\t\tResults");
         result.forEach((k, v) -> {
             System.out.println(k + "\t\t->\t" + v);
