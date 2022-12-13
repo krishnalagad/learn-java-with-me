@@ -11,12 +11,13 @@ public class RemoveDuplicates {
         for (int i = 0; i < arr.length; i++) {
             set.add(arr[i]);
         }
-        int i = 0;
-        int[] temp = new int[set.size()];
-        for (int a : set) {
-            temp[i++] = a;
-        }
-        return temp;
+        // int i = 0;
+        // int[] temp = new int[set.size()];
+        // for (int a : set) {
+        // temp[i++] = a;
+        // }
+        // return temp;
+        return set.stream().mapToInt(Integer::intValue).toArray();
     }
 
     /**
