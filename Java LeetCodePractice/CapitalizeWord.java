@@ -20,5 +20,4 @@ public class CapitalizeWord {
         String result = makeCapitalize("My name iS kriSHNa");
         System.out.println(result);
     }
-
 }
