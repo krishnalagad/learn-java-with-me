@@ -28,11 +28,10 @@ public class Practice2 {
             }
             System.out.println("a: " + a);
         }
-        if (a >= (strArr.length / 2)) {
+        if (a >= (strArr.length / 2))
             System.out.println("Weak");
-        } else {
+        else
             System.out.println("Strong");
-        }
 
     }
 }
