@@ -6,6 +6,7 @@ public class RegEx1 {
                 Pattern.CASE_INSENSITIVE);
         // Pattern pattern = Pattern.compile("\\b([a-zA-Z0-9])\\1\\1+\\b",
         // Pattern.CASE_INSENSITIVE);
+
         int count = 0;
         for (String str : strArr) {
             Matcher matcher = pattern.matcher(str);
