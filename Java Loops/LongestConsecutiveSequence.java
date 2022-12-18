@@ -19,10 +19,11 @@ public class LongestConsecutiveSequence {
             }
         }
         return Math.max(longSequence, currSequence);
+        // return longSequence;
     }
 
     public static void main(String[] args) {
-        int[] arr = { 10, 23, 34, 45, 56, 11, 12, 13, 43, 14, 87, 15, 86, 45, 85, 78, 84, 83 };
+        int[] arr = { 10, 23, 34, 45, 56, 11, 12, 13, 43, 14, 87, 15, 86, 45, 85, 78, 84, 83, 1, 2, 3, 4, 5, 6, 7 };
         System.out.println(longestConsecutive(arr));
     }
 }
