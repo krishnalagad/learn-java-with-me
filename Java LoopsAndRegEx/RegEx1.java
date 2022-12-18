@@ -2,7 +2,8 @@ import java.util.regex.*;
 
 public class RegEx1 {
     public static int findMatches(String[] strArr) {
-        Pattern pattern = Pattern.compile("([a-z\\d])\\1\\1", Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile("([a-z\\d])\\1\\1",
+                Pattern.CASE_INSENSITIVE);
         // Pattern pattern = Pattern.compile("\\b([a-zA-Z0-9])\\1\\1+\\b",
         // Pattern.CASE_INSENSITIVE);
         int count = 0;
