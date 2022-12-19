@@ -20,15 +20,20 @@ public class PasswordCheck {
                         break;
                     }
                 }
-                
             }
         }
         System.out.println("a: " + a);
+        System.out.println("Length half: " + (strArr.length / 2));
+        if (a > (strArr.length / 2)) {
+            System.out.println("Weak");
+        } else {
+            System.out.println("Strong");
+        }
     }
 
     public static void main(String[] args) throws IOException {
-        // BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        // String str = reader.readLine();
-        checkPassword("pass1 ancs1234 1q2w3e4r5t 1q2wasxc");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String str = reader.readLine();
+        checkPassword(str);
     }
 }
