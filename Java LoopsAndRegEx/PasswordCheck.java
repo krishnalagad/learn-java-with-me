@@ -32,6 +32,6 @@ public class PasswordCheck {
     public static void main(String[] args) throws IOException {
         // BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         // String str = reader.readLine();
-        checkPassword("a 1234ab67cd a23s4d5f6 1q2w3e4r5t abcd1234 e3r4t5y6");
+        checkPassword("a 1234ab67cd a23s4d5f6 1q2w3e4r5t abcd1234 e3r4t5y6");   // string of input passwords
     }
 }
