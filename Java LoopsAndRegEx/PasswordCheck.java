@@ -6,17 +6,16 @@ public class PasswordCheck {
         int a = 0;
         for (String str : strArr) {
             int count = 0;
-            if (str.length() < 8) {
+            if (str.length() < 8) 
                 a += 1;
-            } else {
+            else {
                 for (int i = 2; i < str.length(); i++) {
-                    if ((Character.isLetter(str.charAt(i)) && Character.isLetter(str.charAt(i - 1))
+                    if ((Character.isLetter(str.charAt(i)) && Character.isLetter(str.charAt(i - 1)) 
                             && Character.isLetter(str.charAt(i - 2)))
-                            || (Character.isDigit(str.charAt(i))
-                                    && Character.isDigit(str.charAt(i - 1))
-                                    && Character.isDigit(str.charAt(i - 2)))) {
+                        || (Character.isDigit(str.charAt(i)) && Character.isDigit(str.charAt(i - 1))
+                            && Character.isDigit(str.charAt(i - 2)))) 
                         count = 1;
-                    }
+                    
                     if (count == 1) {
                         a += 1;
                         break;
@@ -24,11 +23,10 @@ public class PasswordCheck {
                 }
             }
         }
-        if (a > Double.valueOf(strArr.length / Double.valueOf(2))) {
+        if (a > Double.valueOf(strArr.length / Double.valueOf(2))) 
             System.out.println("Weak");
-        } else {
+        else 
             System.out.println("Strong");
-        }
     }
 
     public static void main(String[] args) throws IOException {
