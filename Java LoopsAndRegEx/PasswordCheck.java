@@ -10,9 +10,11 @@ public class PasswordCheck {
                 a += 1;
             } else {
                 for (int i = 2; i < str.length(); i++) {
-
-                    if (Character.isLetter(str.charAt(i)) && Character.isLetter(str.charAt(i - 1))
-                            && Character.isLetter(str.charAt(i - 2))) {
+                    if ((Character.isLetter(str.charAt(i)) && Character.isLetter(str.charAt(i - 1))
+                            && Character.isLetter(str.charAt(i - 2)))
+                            || (Character.isDigit(str.charAt(i))
+                                    && Character.isDigit(str.charAt(i - 1))
+                                    && Character.isDigit(str.charAt(i - 2)))) {
                         count = 1;
                     }
                     if (count == 1) {
@@ -22,9 +24,7 @@ public class PasswordCheck {
                 }
             }
         }
-        System.out.println("a: " + a);
-        System.out.println("Length half: " + (strArr.length / 2));
-        if (a > (strArr.length / 2)) {
+        if (a > Double.valueOf(strArr.length / Double.valueOf(2))) {
             System.out.println("Weak");
         } else {
             System.out.println("Strong");
@@ -32,8 +32,8 @@ public class PasswordCheck {
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String str = reader.readLine();
-        checkPassword(str);
+        // BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        // String str = reader.readLine();
+        checkPassword("a 1234ab67cd a23s4d5f6 1q2w3e4r5t abcd1234 e3r4t5y6");
     }
 }
