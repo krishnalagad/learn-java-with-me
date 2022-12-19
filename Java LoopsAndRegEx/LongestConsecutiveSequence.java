@@ -19,7 +19,6 @@ public class LongestConsecutiveSequence {
             }
         }
         return Math.max(longSequence, currSequence);
-        // return longSequence;
     }
 
     public static void main(String[] args) {
