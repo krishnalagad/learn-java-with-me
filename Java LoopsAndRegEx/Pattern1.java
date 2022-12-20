@@ -7,7 +7,7 @@ public class Pattern1 {
             for (int j = 1; j < i; j++) {
                 System.out.print(" ");
             }
-            System.out.println();
+            // System.out.print(i);
             // Loop to iterate over each column
             for (int j = i; j <= n; j++) {
                 System.out.print(j + " ");
