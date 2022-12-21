@@ -1,5 +1,5 @@
 # Pattern programs in java
-
+###### Java programs of below mentioned patterns in the above directory
 ## Pattern 1
 ```
 1 2 3 4 5 
