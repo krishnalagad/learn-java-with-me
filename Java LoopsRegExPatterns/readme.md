@@ -1,4 +1,4 @@
-# Pattern programs in java
+# JAVA : PATTERN PROGRAMS.
 
 #### Java programs of below mentioned patterns are in the above directory.
 
