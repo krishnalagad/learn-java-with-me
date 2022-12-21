@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Pattern1 {
     private static void printPattern(int n) {
         for (int i = 1; i <= n; i++) {
@@ -26,10 +24,7 @@ public class Pattern1 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int no = sc.nextInt();
-
-        printPattern(no);
+        printPattern(5);
     }
 
 }
