@@ -1,6 +1,6 @@
 # Pattern programs in java
 
-#### Java programs of below mentioned patterns in the above directory
+#### Java programs of below mentioned patterns are in the above directory.
 
 ## Pattern 1
 
