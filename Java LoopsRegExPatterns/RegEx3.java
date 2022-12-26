@@ -1,6 +1,6 @@
 // package StringMethods;
 
-public class SplitRegEx {
+public class RegEx3 {
     public static void main(String[] args) {
         String rawString = "k,r i.s,h.n a l.a,g a.d";
         String regex = "\\s+|,\\s*|\\.\\s*";
