@@ -1,4 +1,4 @@
-public class SplitRegEx2 {
+public class RegEx4 {
     public static void main(String[] args) {
         String[] strArr = "a1234A2134b1234B3456c6576C4567d8776D4567e67879E4567".split("(?=[A-z])");
         for (String str : strArr) {
