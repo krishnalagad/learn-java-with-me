@@ -4,16 +4,16 @@ public class Pattern23 {
     }
 
     private static void pattern23(int n) {
-        for (int i = n; i >= 1; i--) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j + " ");
+        for (int row = n; row >= 1; row--) {
+            for (int col = 1; col <= row; col++) {
+                System.out.print(col + " ");
             }
             System.out.println();
         }
 
-        for (int i = 2; i <= n; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j + " ");
+        for (int row = 2; row <= n; row++) {
+            for (int col = 1; col <= row; col++) {
+                System.out.print(col + " ");
             }
             System.out.println();
         }
