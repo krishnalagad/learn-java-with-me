@@ -12,7 +12,7 @@ public class WordParityCheck {
         int seq = 0;
         List<String> bin = new ArrayList<>();
         String binaryString = "";
-        
+
         for (int i = 'a'; i <= 'z'; i++)
             map.put((char) i, ++seq);
 
@@ -33,6 +33,6 @@ public class WordParityCheck {
     }
 
     public static void main(String[] args) {
-        System.out.println(checkParity("ram"));
+        System.out.println(checkParity("krishna"));
     }
 }
