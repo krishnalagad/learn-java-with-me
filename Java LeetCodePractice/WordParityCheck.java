@@ -1,5 +1,40 @@
+import java.util.LinkedHashMap;
+import java.util.*;
+
 public class WordParityCheck {
+
+    /**
+     * @param str
+     * @return
+     */
+    public static int checkParity(String str) {
+        Map<Character, Integer> map = new LinkedHashMap<>();
+        int seq = 0;
+        List<String> bin = new ArrayList<>();
+        String binaryString = "";
+        for (int i = 'a'; i <= 'z'; i++)
+            map.put((char) i, ++seq);
+
+        char[] charArr = str.toCharArray();
+        for (char c : charArr) {
+            map.forEach((k, v) -> {
+                if (c == k) {
+                    int val = map.get(k);
+                    bin.add(Integer.toBinaryString(val));
+                }
+            });
+        }
+        for(String b: bin)
+            binaryString += b;
+
+        String result = binaryString.replaceAll("0", "");
+        System.out.println(bin);
+        System.out.println(binaryString);
+        System.out.println(result);
+        return result.length();
+    }
+
     public static void main(String[] args) {
-        
+        System.out.println(checkParity("ram"));
     }
 }
