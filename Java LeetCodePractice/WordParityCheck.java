@@ -12,6 +12,7 @@ public class WordParityCheck {
         int seq = 0;
         List<String> bin = new ArrayList<>();
         String binaryString = "";
+        
         for (int i = 'a'; i <= 'z'; i++)
             map.put((char) i, ++seq);
 
@@ -24,13 +25,10 @@ public class WordParityCheck {
                 }
             });
         }
-        for(String b: bin)
+        for (String b : bin)
             binaryString += b;
 
         String result = binaryString.replaceAll("0", "");
-        System.out.println(bin);
-        System.out.println(binaryString);
-        System.out.println(result);
         return result.length();
     }
 
