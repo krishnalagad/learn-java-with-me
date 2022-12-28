@@ -3,10 +3,6 @@ import java.util.*;
 
 public class WordParityCheck {
 
-    /**
-     * @param str
-     * @return
-     */
     public static int checkParity(String str) {
         Map<Character, Integer> map = new LinkedHashMap<>();
         int seq = 0;
