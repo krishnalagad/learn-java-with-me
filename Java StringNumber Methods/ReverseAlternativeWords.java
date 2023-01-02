@@ -12,7 +12,8 @@ public class ReverseAlternativeWords {
         }
         System.out.println(result);
     }
-
+    
+    // main method.
     public static void main(String[] args) {
         printAlternativeReverse("Aakanksha and krishna are very good mates.");
     }
