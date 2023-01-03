@@ -21,6 +21,7 @@ public class ConvertArrayToList {
         return list;
     }
 
+    // main method.
     public static void main(String[] args) {
         int[] arr1 = { 1, 2, 3, 4, 5, 6, 7 };
         String[] arr2 = { "krishna", "student", "lagad", "surname" };
