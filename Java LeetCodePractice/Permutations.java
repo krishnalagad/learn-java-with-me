@@ -1,7 +1,7 @@
 public class Permutations {
     public static void printPermutation(String str, int idx, String perm) {
         if (str.length() == 0) {
-            System.out.println(perm);
+            System.out.print(perm + ", ");
             return;
         }
         for (int i = 0; i < str.length(); i++) {
@@ -12,7 +12,7 @@ public class Permutations {
     }
 
     public static void main(String args[]) {
-        String str = "abc";
+        String str = "KrishnaLagad";
         printPermutation(str, 0, "");
     }
 }
