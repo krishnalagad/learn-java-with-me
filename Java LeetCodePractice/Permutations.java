@@ -12,7 +12,7 @@ public class Permutations {
     }
 
     public static void main(String args[]) {
-        String str = "KrishnaLagad";
+        String str = "Krishna";
         printPermutation(str, 0, "");
     }
 }
