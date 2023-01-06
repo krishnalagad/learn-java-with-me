@@ -17,6 +17,8 @@ public class ConsecutiveOnes {
         }   
         return count;
     }
+    
+    // main method
     public static void main(String[] args) {
         System.out.println(findIntegers(1));
     }
