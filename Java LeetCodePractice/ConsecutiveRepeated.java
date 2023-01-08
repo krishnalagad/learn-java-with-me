@@ -16,6 +16,7 @@ public class ConsecutiveRepeated {
         return (int) max;
     }
 
+    // main method.
     public static void main(String[] args) {
         int[] arr = { 9, 7, 8, 1, 2, 3, 6, 5 };
         System.out.println(findConsecutiveRepeated(arr));
