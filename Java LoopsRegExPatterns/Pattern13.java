@@ -3,6 +3,7 @@ public class Pattern13 {
         pattern13(7);
     }
 
+    // main method 
     private static void pattern13(int n) {
         for (int row = 1; row <= n; row++) {
             for (int spaces = 1; spaces <= n - row; spaces++) {
