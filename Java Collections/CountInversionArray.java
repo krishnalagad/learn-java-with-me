@@ -13,6 +13,7 @@ public class CountInversionArray {
         return resp.size();
     }
 
+    // main method
     public static void main(String[] args) {
         int[] nums = { 8, 4, 2, 1 };
         System.out.println(solve(nums));
