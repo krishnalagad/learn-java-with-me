@@ -1,12 +1,14 @@
 abstract class Parent {
-    protected void print() {
+    protected Object print() {
         System.out.println("Parent class method..");
+        return "";
     }
 }
 
 class Child extends Parent {
-    public void print() {
+    public String print() {
         System.out.println("Child class method..");
+        return "";
     }
 }
 
