@@ -1,4 +1,4 @@
-class Parent {
+abstract class Parent {
     protected void print() {
         System.out.println("Parent class method..");
     }
