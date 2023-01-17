@@ -13,7 +13,7 @@ class Child extends Parent {
 }
 
 public class MethodOverriding {
-    public static void main(String[] args) {
+    static public void main(String[] args) {
         Parent p = new Child();
         p.print();
     }
