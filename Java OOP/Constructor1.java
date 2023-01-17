@@ -3,7 +3,7 @@ public class Constructor1 {
         System.out.println("Default public constructor");
     }
 
-    private Constructor1(int a) {
+    protected Constructor1(int a) {
         System.out.println("Parameterized protected constructor");
     }
 
