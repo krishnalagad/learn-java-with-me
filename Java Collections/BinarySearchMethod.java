@@ -3,9 +3,7 @@ import java.util.Collections;
 import java.util.stream.Collectors;
 
 public class BinarySearchMethod {
-    /**
-     * @param args
-     */
+
     public static void main(String[] args) {
         int[] arr = new int[100000];
         for (int i = 0; i < arr.length; i++) {
