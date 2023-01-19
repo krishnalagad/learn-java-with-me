@@ -28,6 +28,7 @@ public class WordParityCheck {
         return result.length();
     }
 
+    // main method
     public static void main(String[] args) {
         System.out.println(checkParity("krishna"));
     }
