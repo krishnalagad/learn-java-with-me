@@ -7,6 +7,7 @@ public class Constructor1 {
         System.out.println("Parameterized protected constructor");
     }
 
+    // main method
     public static void main(String[] args) {
         Constructor1 o1 = new Constructor1(3);
     }
