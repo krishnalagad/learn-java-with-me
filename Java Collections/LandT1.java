@@ -52,6 +52,7 @@ public class LandT1 {
         return count;
     }
 
+    // main method.
     public static void main(String[] args) {
         char[] arr = { 'a', 'e', 'k', 'v', 'A', 'i', 'c', 'x', 'X', 'I' };
         System.out.println(func1(arr));
