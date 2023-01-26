@@ -50,6 +50,7 @@ public class ConvertListToMap {
         students.add(student);
     }
 
+    // main method
     public static void main(String[] args) {
         // int[] arr = { 1, 2, 5, 9, 7, 3, 4, 6 };
         // List<Integer> list = Arrays.stream(arr).boxed().collect(Collectors.toList());
