@@ -50,7 +50,7 @@ public class ArrayListCode1 {
         System.out.println(arrayList.isEmpty());
 
         // untyped safe
-        // ----------------------------------------------------------------------------------------------------
+        // -----------------------------------------------------------------
         arrayList2 = new ArrayList();
         arrayList2.add("Krishna");
         arrayList2.add("Stud 1");
