@@ -1,5 +1,5 @@
 public class StackClassLinkedList{
-    // each node
+    // Each node
     static class Node{
         int data;
         Node next;
