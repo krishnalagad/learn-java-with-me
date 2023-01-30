@@ -1,8 +1,10 @@
 public class Constructor1 {
+    // default constructor
     public Constructor1() {
         System.out.println("Default public constructor");
     }
 
+    // parametrized constructor
     protected Constructor1(int a) {
         System.out.println("Parameterized protected constructor");
     }
