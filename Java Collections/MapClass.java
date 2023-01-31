@@ -85,6 +85,7 @@ public class MapClass {
         System.out.println();
     }
 
+    // main method
     public static void main(String[] args) {
         addData(101, "Krishna", "9098765654");
         addData(103, "Student", "9098765654");
