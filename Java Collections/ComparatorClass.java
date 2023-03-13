@@ -74,6 +74,7 @@ public class ComparatorClass {
     /**
      * @param args
      */
+    // main method
     public static void main(String[] args) {
         ComparatorClass c = new ComparatorClass();
         c.addEmp(122, "Krishna Lagad", "9834566763");
