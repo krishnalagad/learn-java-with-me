@@ -1,6 +1,7 @@
 // package StringMethods;
 
 class StringMethods {
+    // main method.
     public static void main(String[] args) {
 
         // 1. charAt(): This method returns a char at the specified index.
