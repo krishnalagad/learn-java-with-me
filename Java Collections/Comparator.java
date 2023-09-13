@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 public class Comparator {
@@ -58,6 +59,26 @@ public class Comparator {
         User user4 = new User(4, "Yadav", "Pune");
         User user5 = new User(5, "ABC", "Pune");
         User user6 = new User(6, "PQR", "Pune");
+
+        ConcurrentHashMap<User, Integer> map = new ConcurrentHashMap<>() {
+            // {
+            //     put(1, user1);
+            //     put(2, user2);
+            //     put(3, user3);
+            //     put(4, user4);
+            //     put(5, user5);
+            //     put(6, user6);
+            // }
+            {
+                put(user1, 1);
+                put(user2, 2);
+                put(user3, 3);
+                put(user4, 4);
+                put(user5, 5);
+                put(user6, 6);
+            }
+        };
+        System.out.println(map);
 
         int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
 
