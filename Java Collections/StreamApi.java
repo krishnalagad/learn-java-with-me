@@ -1,3 +1,8 @@
+import java.util.List;
+import java.util.Random;
+import java.util.UUID;
+import java.util.stream.IntStream;
+
 public class StreamApi {
     static class User{
         private Integer id;
@@ -44,6 +49,9 @@ public class StreamApi {
         
     }
     public static void main(String[] args) {
-        
+        List<User> users = IntStream.rangeClosed(1, 20)
+				.mapToObj(index -> new User(index, "User" + index, UUID.randomUUID().toString(), 
+                UUID.randomUUID().toString() + "@stream.com")).toList();
+        System.out.println(users);
     }
 }
