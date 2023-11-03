@@ -51,6 +51,13 @@ public class StreamApi {
         List<User> users = IntStream.rangeClosed(1, 20)
 				.mapToObj(index -> new User(index, "User" + index, UUID.randomUUID().toString(), 
                 UUID.randomUUID().toString() + "@stream.com")).toList();
-        System.out.println(users);
+        users.forEach(user -> {
+            System.out.println(user);
+        });  
+        
+        List<User> newUsers = users.stream().filter(user -> user.getId() % 2 == 0).toList();
+        newUsers.forEach(user -> {
+            System.out.println(user);
+        });
     }
 }
