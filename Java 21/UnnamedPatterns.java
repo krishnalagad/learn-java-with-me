@@ -9,6 +9,7 @@ public class UnnamedPatterns {
     public static void main(String[] args) {
         Employee emp1 = new Employee(101L, "Krishna", 25000, true);
 
+        // Unnamed pattern: use underscore
         if (emp1 instanceof Employee(Long id, _, _, _)) {
             System.out.println("Name of an employee: " + emp1.name);
         }
