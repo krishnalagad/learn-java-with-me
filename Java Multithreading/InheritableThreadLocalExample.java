@@ -2,7 +2,7 @@ public class InheritableThreadLocalExample {
     public static void main(String[] args) throws InterruptedException {
         InheritableThreadLocal<String> threadLocal = new InheritableThreadLocal<>();
 
-        // Parent thread 
+        // Parent thread
         Thread thread1 = new Thread(() -> {
             System.out.println("Parent thread started!!");
             threadLocal.set("Krishna");
