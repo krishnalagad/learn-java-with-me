@@ -1,5 +1,4 @@
 class MyThread extends Thread {
-
     @Override
     public void run() {
         System.out.println("\nThread started implementation 1");

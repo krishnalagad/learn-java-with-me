@@ -35,6 +35,8 @@ public class VolatileKeyword {
             while (!sharedResource.isFlag()) {
                 // It will run until flag is set to true by thread 1.
             }
+            sharedResource.setFlag(false);
+            System.out.println("Flag set to false by thread 2");
         }, "Runnable thread 2").start();
     }
 }
