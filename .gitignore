@@ -3,3 +3,4 @@ Java LeetCodePractice/.vscode/launch.json
 *.iml
 *.yml
 *.xml
+out/**
